@@ -4,3 +4,4 @@ Docker container containing tooling for running firebase testlab on top of the a
 # Installs
 * API 29 Build tools.
 * gcloud sdk.
+* Exposes `aapt` as a path variable
