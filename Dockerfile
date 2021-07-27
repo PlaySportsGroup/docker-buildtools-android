@@ -10,6 +10,6 @@ RUN sudo make
 RUN sudo make install
 
 COPY --from=gcloudsdk263 /usr/local/bin/docker /usr/local/bin/docker
-ENV PATH "$PATH:/opt/google-cloud-sdk/bin/:/opt/android/sdk/build-tools/29.0.3"
+ENV PATH "$PATH:/opt/google-cloud-sdk/bin/:/opt/android/sdk/build-tools/29.0.3:/opt/bundletool/"
 
 # TODO build and run bundle tool. publish then start running lanes on it from ci experimental
