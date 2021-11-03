@@ -1,5 +1,6 @@
 FROM google/cloud-sdk:263.0.0 as gcloudsdk263
-FROM circleci/android:api-30
+# https://discuss.circleci.com/t/android-convenience-image-moving-to-java-v11-on-august-17th/36601
+FROM ccistaging/android:api-30 
 
 WORKDIR /
 ADD git-crypt-0.6.0 git-crypt-0.6.0
